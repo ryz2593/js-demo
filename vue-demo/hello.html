@@ -6,8 +6,10 @@
 </head>
 <body>
 <div id="app">
+    <input type="text" v-model="num"> <button @click="num++">+</button>
     <h1>
-        {{name}} 很好用
+        {{name}} is useful<br>
+        {{num}} people use
     </h1>
 </div>
 <script src="node_modules/vue/dist/vue.js"></script>
@@ -18,6 +20,7 @@
         el: "#app",
         data:{
             name: "java",
+            num: 1
         }
     });
 
