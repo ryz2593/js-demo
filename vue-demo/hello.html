@@ -6,6 +6,8 @@
 </head>
 <body>
 <div id="app">
+    <button @click="handleClick">点我</button>
+    <br>
     <input type="text" v-model="num"> <button @click="num++">+</button>
     <h1>
         {{name}} is useful<br>
@@ -21,6 +23,11 @@
         data:{
             name: "java",
             num: 1
+        },
+        methods: {
+          handleClick(){
+              console.log("hello!");
+          }
         }
     });
 
